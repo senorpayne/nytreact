@@ -2,6 +2,18 @@ import React, { Component } from "react";
 import Articles from "./Articles/Articles";
 import "./App.css";
 
+state = {
+      articles: [],
+      title: "",
+      link:"",
+      id:""
+      // author: "",
+      // synopsis: ""
+    };
+
+
+
+
 class App extends Component {
   render() {
     return (

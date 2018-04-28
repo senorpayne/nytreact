@@ -1,56 +1,64 @@
-
 import React, { Component } from "react";
 import API from "../utils/API";
 
 class Articles extends Component {
-  state = {
-    articles: [],
-    title: "",
-    link:"",
-    id:""
-    // author: "",
-    // synopsis: ""
-  };
 
-  componentDidMount() {
-    this.loadArticles();
-  }
+    // 
 
-  loadArticles = () => {
-    API.getArticless()
-      .then(res =>
-        this.setState({ articles: res.data, title: "", link: "", id: "" })
-      )
-      .catch(err => console.log(err));
-  };
+    // componentDidMount() {
+    //   // this.loadArticles();
+    //   console.log("line 17 works")
+    // }
 
-  onInputChange = res.data =>{e.target;
-    const {title,link,id}=res.data.target;
+    //  loadArticles = () => {
+    //   API.getArticles()
+    //     .then(res =>
+    //       this.setState({ articles: res.data, title: "", link: "", id: "" })
+    //     )
+    //     .catch(err => console.log(err));
+    // };
+
+    // onInputChange = e =>{e.target;
+    //   const {title,link,id}=e.target;
 
 
-    this.set({
-[articles]:value,
-//[link]:value,
-//[id]:value
-this.loadArticles()
-    })
-  }
+    //     this.set({
+    // [articles]:value
+    // //[link]:value,
+    // //[id]:value
+
+    // this.loadArticles();
+    //     }).then((res)=>{
+
+    //       render();
+    //     })
 
 
 
-render() {
-    return (
-
-      <Articles
-        title={this.state.title}
-        link={this.state.link}
-        id={this.state.id} 
-        />
-
-      )}
+    // .catch(err=>{
+    //   console.log(err)
+    // })
+}
 
 
 
 
-    };
+render() 
+    {
+       return <h1 > Hello, World < /h1>;
+}};
+
+// <Articles
+//   title={this.state.title}
+//   link={this.state.link}
+//   id={this.state.id} 
+//   />
+
 export default Articles;
+
+
+
+
+
+
+
