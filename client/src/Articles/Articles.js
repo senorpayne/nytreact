@@ -40,13 +40,10 @@ class Articles extends Component {
     // })
 }
 
-
-
-
 render() 
     {
-       return <h1 > Hello, World < /h1>;
-}};
+       return <div > Hello, World </div>;
+};
 
 // <Articles
 //   title={this.state.title}

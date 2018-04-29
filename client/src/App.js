@@ -17,14 +17,14 @@ state = {
 class App extends Component {
   render() {
     return (
-      <div className="App">
+     // <div className="App">
         <div className="App-header">
         <title/>
-          <h2>Welcome to NYTSCRAPPER!</h2>
+         <h2>Welcome to NYTSCRAPPER!</h2>
             <Articles />
         </div>
        
-      </div>
+      //</div>
     );
   }
 }
